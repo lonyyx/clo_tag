@@ -1,0 +1,367 @@
+/* Здесь вы напишете основную часть стилей страницы.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+
+*/
+
+.page {
+  width: 1440px;
+  height: 960px;
+  margin: auto;
+  background: var(--page-background);
+  background-color: var(--page-background2);
+}
+
+/*   //   //    ////////           //\\       ////////      ///////     /////////               
+     //   //    //               //   \\      //      //    //          //     //
+     ///////    ////////       // ==== \\     //      //    ///////     /////////   
+     //   //    //           //         \\    //      //    //          /////   
+     //   //    ////////   //            \\   ////////      ///////     //   ////   */
+
+.header {
+  width: 700px;
+  height: 368px;
+  border: 2px solid var(--color-header);
+  background: var(--color-header2);
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.logo-group {
+  width: 455px;
+  height: 108px;
+  text-transform: uppercase;
+  margin-top: 136px;
+  margin-left: 120.5px;
+  margin-bottom: 25px;
+}
+
+.logo__title {
+  font-family: "Press Start 2P", sans-serif;
+  width: 455px;
+  height: 65px;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 65px;
+  color: var(--color-header);
+}
+
+.logo__undertitle {
+  font-family: "Press Start 2P", sans-serif;
+  width: 345px;
+  height: 23px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 55px;
+  font-size: 23px;
+  line-height: 23px;
+  color: var(--color-header);
+}
+
+.theme-menu {
+  width: 84px;
+  height: 70px;
+  margin-left: 317px;
+  margin-bottom: 25px;
+}
+
+.theme-menu__button {
+  font-family: "Press Start 2P", sans-serif;
+  width: 84px;
+  height: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--color-header);
+  position: relative;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.theme-menu__button:not(:disabled)::after {
+  content: "";
+  display: block;
+  background: currentColor;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 2px;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  animation: arrow 0.5s ease-in-out infinite alternate;
+  inset-inline-start: -20px;
+  /* Safari fix */
+  inset-block-start: 0px;
+}
+
+/*//////////////////////////////////////////////////////MAIN/////////////////////////////////////////////////*/
+
+.posts {
+  width: 696px;
+  height: 8022px;
+  margin: auto;
+}
+
+.post {
+  width: 696px;
+  height: 959px;
+  border: 2px solid var(--color-header);
+  background: var(--color-header2);
+  margin-top: 50px;
+  position: relative;
+}
+
+.post2 {
+  width: 696px;
+  height: 1001px;
+  border: 2px solid var(--color-header);
+  background: var(--color-header2);
+  margin-top: 50px;
+  position: relative;
+}
+
+.post3 {
+  width: 696px;
+  height: 1022px;
+  border: 2px solid var(--color-header);
+  background: var(--color-header2);
+  margin-top: 50px;
+  position: relative;
+}
+
+.post4 {
+  width: 696px;
+  height: 1043px;
+  border: 2px solid var(--color-header);
+  background: var(--color-header2);
+  margin-top: 50px;
+  position: relative;
+}
+
+.post__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 785;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: var(--color-header);
+  width: 100%;
+  height: 33px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.post__img {
+  width: 100%;
+  height: 696px;
+  margin: 0;
+}
+
+.post__undertitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 465;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-header);
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.post__undertitle2 {
+  margin-top: 25px;
+  width: 646px;
+  height: 21px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  height: 88px;
+}
+
+.card__icon-button {
+  padding: 0;
+}
+
+.like-icon {
+  margin-top: 5px;
+  margin-left: 502px;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--color-header);
+  animation: main-body 1s ease-in-out;
+}
+
+.like-icon:hover .core {
+  fill: var(--color-header);
+  animation: main-body 0.1s ease-in-out;
+}
+
+.like-icon.is-liked .main-body {
+  fill: red;
+  animation: main-body 1s ease-in-out;
+}
+
+.like-icon.is-liked .core {
+  fill: red;
+  animation: main-body 1s ease-in-out;
+}
+
+.like-icon.is-liked .contour {
+  fill: red;
+  animation: main-body 1s ease-in-out;
+}
+
+@keyframes main-body {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(4px);
+  }
+}
+
+.card__like-button {
+  position: relative;
+  width: 130px;
+  height: 38px;
+  border: 2px solid var(--color-header);
+  margin-top: 25px;
+  margin-left: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.card__like-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-header);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button:hover::before {
+  transform: translateX(0);
+}
+
+.button__text {
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12.6px;
+  color: var(--color-header);
+}
+/* 
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+ */
+
+@media (width < 375px) {
+  .page {
+    width: 375px;
+    height: 7443px;
+  }
+
+  /*   //   //    ////////           //\\       ////////      ///////     /////////               
+       //   //    //               //   \\      //      //    //          //     //
+       ///////    ////////       // ==== \\     //      //    ///////     /////////   
+       //   //    //           //         \\    //      //    //          /////   
+       //   //    ////////   //            \\   ////////      ///////     //   ////   */
+
+  .header {
+    width: 375px;
+    height: 327px;
+  }
+
+  .logo-group {
+    width: 343px;
+    height: 83px;
+    margin-top: 120px;
+    margin-left: 14px;
+  }
+
+  .logo__title {
+    width: 343px;
+    height: 49px;
+    font-size: 49px;
+    line-height: 49px;
+  }
+
+  .logo__undertitle {
+    width: 210px;
+    height: 14px;
+    margin-left: 81px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .theme-menu {
+    margin-left: 154px;
+  }
+}
