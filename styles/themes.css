@@ -36,5 +36,24 @@
   --page-background2: #e7e7e7;
   --color-header: #000000;
   --color-header2: #ffffff;
-  --background-header: 2px solid #000000;
+}
+
+:root.theme-auto {
+  --page-background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      #660000 2px,
+      #660000 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      #660000 2px,
+      #660000 4px
+    );
+  --page-background2: #ffee00;
+  --color-header: #ffee00;
+  --color-header2: #660000;
 }
