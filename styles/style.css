@@ -324,8 +324,8 @@
 }
 
 .dialog {
-  width: 1440px;
-  height: 960px;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -337,6 +337,7 @@
   padding-left: 30px;
   padding-top: 30px;
   margin: auto;
+  margin-top: 15%;
 }
 
 .flex_footer {
@@ -467,5 +468,11 @@
   .like-icon {
     margin-top: 8px;
     margin-left: 177px;
+  }
+
+  .footer_btn {
+    width: 306px;
+    height: 84px;
+    margin-left: 10%;
   }
 }
