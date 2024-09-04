@@ -309,6 +309,66 @@
   line-height: 12.6px;
   color: var(--color-header);
 }
+
+.footer_btn {
+  font-family: "Press Start 2P", sans-serif;
+  width: 335px;
+  height: 55px;
+  font-size: 14px;
+  line-height: 12.6px;
+  background: var(--color-header2);
+  color: var(--color-header);
+  border: 2px solid var(--color-header);
+  margin-top: 323px;
+  margin-left: 552px;
+}
+
+.dialog {
+  width: 1440px;
+  height: 960px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog__container {
+  width: 353px;
+  height: 191px;
+  background: var(--color-header2);
+  border: 1px solid var(--color-header);
+  padding-left: 30px;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.flex_footer {
+  display: flex;
+}
+
+.svg_footer {
+  margin-top: 12px;
+}
+
+.dialog__title {
+  font-family: "Press Start 2P", sans-serif;
+  width: 234px;
+  height: 63px;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-header);
+  margin-left: 12px;
+}
+
+.button-body {
+  font-family: "Press Start 2P", sans-serif;
+  width: 293px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 12.6px;
+  background: var(--color-header2);
+  color: var(--color-header);
+  border: 2px solid var(--color-header);
+  margin-top: 30px;
+}
+
 /* 
 
 
