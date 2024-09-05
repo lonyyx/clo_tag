@@ -321,6 +321,23 @@
   border: 2px solid var(--color-header);
   margin-top: 323px;
   margin-left: 552px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.footer_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-header);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .dialog {
