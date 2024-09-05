@@ -311,6 +311,7 @@
 }
 
 .footer_btn {
+  position: relative;
   font-family: "Press Start 2P", sans-serif;
   width: 335px;
   height: 55px;
